@@ -17,9 +17,6 @@ namespace Weather
 
     public partial class Weather
     {
-        [JsonProperty("coord")]
-        public Coord Coord { get; set; }
-
         [JsonProperty("weather")]
         public WeatherElement[] WeatherWeather { get; set; }
 

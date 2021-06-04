@@ -25,6 +25,8 @@ namespace webapi_news_weather.Tools
                         using (StreamReader objReader = new StreamReader(strReader))
                         {
                             string responseBody = objReader.ReadToEnd();
+                            // Do something with responseBody
+                            Console.WriteLine("WEATHER " + responseBody);
                             return responseBody;
                         }
                     }
